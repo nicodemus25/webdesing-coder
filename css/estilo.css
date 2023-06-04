@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.cabecera {
+	background-color: #045dc3d6;
+	top: 0px;
+}
+.colorbarra{
+	background-color: #0556b2be;
+}
+
+
+body {
+	font-family: 'Josefin Sanss', Arial, Helvetica, sans-serif;
+	background-color: #2a7bcb;
+	
+}
+.letra{
+	font-size: 1.5rem
+}
+.contenedor { 
+	background-color: #2a7bcb;
+	width: 90%;
+	height: 90vh;
+	margin: 20px auto;
+	display: grid;
+    gap: 5px;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: 
+	"alpes img1"
+	"cordi img2"
+	"footer footer ";
+	justify-items: center;
+	
+	}
+
+	.alpes {
+		grid-area: alpes;
+		
+	}
+	
+	.img1 {
+		grid-area: img1;
+	}
+	.img2 {
+		grid-area: img2;
+	}
+	
+	.cordi {
+		grid-area: cordi;
+	}
+	
+	.footer {
+		grid-area: footer;
+		}
+
+@media screen and (max-width: 768px) {
+ 
+	
+	.contenedor { 
+		background-color: #2a7bcb;
+		width: 90%;
+	    height: 2000px;
+	    margin: 20px auto;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-areas: 
+		"alpes alpes"
+		"img1  img1"
+		"cordi cordi"
+		"img2  img2"
+		"footer footer";
+		
+		
+		}
+	
+	}

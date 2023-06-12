@@ -1,109 +1,194 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-.cabecera {
-	background-color: #045dc3d6;
-	top: 0px;
-}
-.colorbarra{
-	background-color: #0556b2be;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.pakviajes .pack-s h3 {
+  text-align: center;
+  color: #f7f7f7;
+  padding: 30px;
+  background-color: #4d79ea; }
+
+.pakviajes .pack-s p {
+  text-align: center;
+  padding: 50px;
+  background-color: #3456ec; }
+  .pakviajes .pack-s p:hover {
+    color: #f19c00; }
+
+.pakviajes div {
+  display: flex;
+  justify-content: center; }
+
+.pakviajes .pack-s h3 {
+  text-align: center;
+  color: #f7f7f7;
+  padding: 30px;
+  background-color: #4d79ea; }
+
+.pakviajes .pack-s p {
+  text-align: center;
+  padding: 50px;
+  background-color: #3456ec; }
+  .pakviajes .pack-s p:hover {
+    color: #f19c00; }
+
+.pakviajes div {
+  display: flex;
+  justify-content: center; }
+
+.pakviajes .pack-a h3 {
+  text-align: center;
+  color: #f7f7f7;
+  padding: 30px;
+  background-color: #4d79ea; }
+
+.pakviajes .pack-a p {
+  text-align: center;
+  padding: 50px;
+  background-color: #3456ec; }
+  .pakviajes .pack-a p:hover {
+    color: #f19c00; }
+
+.pakviajes div {
+  display: flex;
+  justify-content: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.formulario {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  border-radius: 5px; }
+
+.formulario h2 {
+  text-align: center;
+  color: white; }
+
+.formulario label {
+  font-weight: bold;
+  color: white; }
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main {
+  display: flex;
+  flex-direction: column; }
+  .main div h2 {
+    text-align: center;
+    padding: 50px;
+    background-color: #3456ec; }
+  .main div .sec {
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 50px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-	font-family: 'Josefin Sanss', Arial, Helvetica, sans-serif;
-	background-color: #2a7bcb;
-	height: 100%;
-	
-}
-.letra{
-	font-size: 1.5rem
-}
-.formulario {
-	max-width: 400px;
-	margin: 0 auto;
-	padding: 20px;
-	background-color: #f2f2f2;
-	border-radius: 5px;
-  }
+  font-family: 'Josefin Sanss', Arial, Helvetica, sans-serif;
+  background-color: #2a7bcb;
+  height: 100%; }
 
-  .formulario h2 {
-	text-align: center;
-  }
+header .cabecera {
+  background-color: #05458eec;
+  top: 0px; }
 
-  .formulario label {
-	font-weight: bold;
-  }
+header h1 {
+  text-align: center;
+  color: #f7f7f7; }
 
-  .formulario input,
-  .formulario textarea {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-}
+header h3 {
+  text-align: center;
+  color: #f7f7f7; }
 
+header nav .colorbarra {
+  background-color: #2774cde1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header nav .colorbarra div ul li {
+    font-size: 1.5rem;
+    color: #edeef8ec; }
+    header nav .colorbarra div ul li:hover {
+      color: black; }
 
+main .contenedor {
+  background-color: #2a7bcb;
+  width: 90%;
+  height: 90vh;
+  margin: 20px auto;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "alpes img1" "cordi img2" "footer footer ";
+  justify-items: center; }
+  main .contenedor .alpes article h2 {
+    color: whitesmoke; }
+  main .contenedor .alpes article p {
+    line-height: 1.5; }
+    main .contenedor .alpes article p:hover {
+      color: #d07206; }
 
+main .cordi article h2 {
+  color: whitesmoke; }
 
- 
-.contenedor { 
-	background-color: #2a7bcb;
-	width: 90%;
-	height: 90vh;
-	margin: 20px auto;
-	display: grid;
-    gap: 5px;
-	grid-template-columns: 1fr 2fr;
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-areas: 
-	"alpes img1"
-	"cordi img2"
-	"footer footer ";
-	justify-items: center;
-	
-	}
+main .cordi article p {
+  line-height: 1.5; }
+  main .cordi article p:hover {
+    color: #d07206; }
 
-	.alpes {
-		grid-area: alpes;
-		
-	}
-	
-	.img1 {
-		grid-area: img1;
-	}
-	.img2 {
-		grid-area: img2;
-	}
-	
-	.cordi {
-		grid-area: cordi;
-	}
-	
-	.footer {
-		grid-area: footer;
-		}
+main .footer .titulo {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-@media screen and (max-width: 768px) {
- 
-	
-	.contenedor { 
-		background-color: #2a7bcb;
-		width: 90%;
-	    height: 2000px;
-	    margin: 20px auto;
-		grid-template-columns: 1fr 2fr;
-		grid-template-rows: repeat(5, 1fr);
-		grid-template-areas: 
-		"alpes alpes"
-		"img1  img1"
-		"cordi cordi"
-		"img2  img2"
-		"footer footer";
-		
-		
-		}
-	
-	}
+main .footer article p {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0520f0;
+  text-align: center; }
+  main .footer article p:hover {
+    color: #f19c00; }
+
+main .alpes {
+  grid-area: alpes; }
+
+main .img1 {
+  grid-area: img1; }
+
+main .img2 {
+  grid-area: img2; }
+
+main .cordi {
+  grid-area: cordi; }
+
+main .footer {
+  grid-area: footer; }
+
+footer a:hover {
+  color: black; }

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pakviajes{
+    .pack-s{
+        h3{
+            text-align: center;
+            color: #f7f7f7;
+            padding: 30px;
+            background-color: #4d79ea;
+        }
+        p{
+            text-align: center;
+            padding: 50px;
+            background-color: #3456ec;
+            &:hover{
+                color: #f19c00;
+            }
+        }
+    }
+    div{
+        display: flex;
+        justify-content: center;
+    }
+    .pack-s{
+        h3{
+            text-align: center;
+            color: #f7f7f7;
+            padding: 30px;
+            background-color: #4d79ea;
+        }
+        p{
+            text-align: center;
+            padding: 50px;
+            background-color: #3456ec;
+            &:hover{
+                color: #f19c00;
+            }
+        }
+    }
+    div{
+        display: flex;
+        justify-content: center;
+    }
+    .pack-a{
+        h3{
+            text-align: center;
+            color: #f7f7f7;
+            padding: 30px;
+            background-color: #4d79ea;
+        }
+        p{
+            text-align: center;
+            padding: 50px;
+            background-color: #3456ec;
+            &:hover{
+                color: #f19c00;
+            }
+        }
+    }
+    div{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+    
+    
+}

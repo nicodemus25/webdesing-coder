@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    div{
+        h2{
+            text-align: center;
+            padding: 50px;
+            background-color:#3456ec;
+        }
+        .sec{
+            text-align: center;
+            line-height: 1.5;
+            font-weight: bold;
+            padding: 50px;
+        }
+    }  
+
+    
+}

@@ -139,7 +139,7 @@ main .contenedor {
   height: 90vh;
   margin: 20px auto;
   display: grid;
-  gap: 5px;
+  gap: 10px;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "alpes img1" "cordi img2" "footer footer ";

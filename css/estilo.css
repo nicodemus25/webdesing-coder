@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box; }
 
+header .cabecera nav .colorbarra {
+  display: flex;
+  justify-content: center !important;
+  align-items: center; }
+
 .pakviajes .pack-s h3 {
   text-align: center;
   color: #f7f7f7;
@@ -29,7 +34,8 @@
 .pakviajes .pack-s p {
   text-align: center;
   padding: 50px;
-  background-color: #3456ec; }
+  background-color: #3456ec;
+  border-radius: 100px; }
   .pakviajes .pack-s p:hover {
     color: #f19c00; }
 
@@ -46,7 +52,8 @@
 .pakviajes .pack-a p {
   text-align: center;
   padding: 50px;
-  background-color: #3456ec; }
+  background-color: #3456ec;
+  border-radius: 100px; }
   .pakviajes .pack-a p:hover {
     color: #f19c00; }
 
@@ -98,7 +105,19 @@
     text-align: center;
     line-height: 1.5;
     font-weight: bold;
-    padding: 50px; }
+    padding: 50px;
+    background-color: skyblue;
+    border-radius: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; }
 
 * {
   margin: 0;
@@ -125,7 +144,7 @@ header h3 {
 header nav .colorbarra {
   background-color: #2774cde1;
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   align-items: center; }
   header nav .colorbarra div ul li {
     font-size: 1.5rem;
@@ -136,7 +155,6 @@ header nav .colorbarra {
 main .contenedor {
   background-color: #2a7bcb;
   width: 90%;
-  height: 90vh;
   margin: 20px auto;
   display: grid;
   gap: 10px;
@@ -147,7 +165,9 @@ main .contenedor {
   main .contenedor .alpes article h2 {
     color: whitesmoke; }
   main .contenedor .alpes article p {
-    line-height: 1.5; }
+    line-height: 1.5;
+    background-color: skyblue;
+    border-radius: 10px; }
     main .contenedor .alpes article p:hover {
       color: #d07206; }
 
@@ -155,7 +175,9 @@ main .cordi article h2 {
   color: whitesmoke; }
 
 main .cordi article p {
-  line-height: 1.5; }
+  line-height: 1.5;
+  background-color: skyblue;
+  border-radius: 10px; }
   main .cordi article p:hover {
     color: #d07206; }
 
@@ -163,7 +185,9 @@ main .footer .titulo {
   color: whitesmoke;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px; }
 
 main .footer article p {
   border-radius: 5px;
@@ -171,7 +195,8 @@ main .footer article p {
   justify-content: center;
   align-items: center;
   background-color: #0520f0;
-  text-align: center; }
+  text-align: center;
+  border-radius: 10px; }
   main .footer article p:hover {
     color: #f19c00; }
 
@@ -190,5 +215,33 @@ main .cordi {
 main .footer {
   grid-area: footer; }
 
-footer a:hover {
-  color: black; }
+footer {
+  padding: 10px 20px; }
+  footer a:hover {
+    color: black; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    background-color: #2a7bcb;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "alpes alpes" "img1  img1" "cordi cordi" "img2  img2" "footer footer"; }
+    .contenedor .alpes {
+      grid-area: alpes; }
+    .contenedor .img1 {
+      grid-area: img1;
+      width: 100%; }
+    .contenedor .img2 {
+      grid-area: img2;
+      width: 100%;
+      margin-bottom: 5px; }
+    .contenedor .cordi {
+      grid-area: cordi; }
+    .contenedor .footer {
+      grid-area: footer;
+      text-align: center;
+      padding: 10px 20px; } }

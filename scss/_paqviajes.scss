@@ -3,6 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    .cabecera{
+        nav{
+            .colorbarra{
+                display:flex;
+                justify-content: center !important;
+                align-items: center;
+            }
+        }
+       
+    }
+}
+
 .pakviajes{
     .pack-s{
         h3{
@@ -35,6 +48,7 @@
             text-align: center;
             padding: 50px;
             background-color: #3456ec;
+            border-radius: 100px;
             &:hover{
                 color: #f19c00;
             }
@@ -55,6 +69,7 @@
             text-align: center;
             padding: 50px;
             background-color: #3456ec;
+            border-radius: 100px;
             &:hover{
                 color: #f19c00;
             }

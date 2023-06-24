@@ -1,6 +1,7 @@
 @import "paqviajes";
 @import "contacto";
 @import "sobrenosotros";
+@import "galeria";
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ header{
         background-color: #05458eec;
 	    top: 0px;
         
+        
       
     }
     h1{
@@ -32,7 +34,7 @@ header{
         .colorbarra{
             background-color: #2774cde1;
             display:flex;
-            justify-content: center;
+            justify-content: center !important;
             align-items: center;
             div{
                 &{
@@ -55,10 +57,10 @@ header{
     }
 }
 main{
+    
     .contenedor { 
-        background-color: #2a7bcb;
+    background-color: #2a7bcb;
         width: 90%;
-        height: 90vh;
         margin: 20px auto;
         display: grid;
         gap: 10px;
@@ -76,6 +78,8 @@ main{
                 }
                 p{
                     line-height: 1.5;
+                    background-color: skyblue;
+                    border-radius: 10px;
                     &:hover{
                         color: rgb(208, 114, 6);
                     }
@@ -92,6 +96,8 @@ main{
                 }
                 p{
                     line-height: 1.5;
+                    background-color: skyblue;
+                    border-radius: 10px;
                     &:hover{
                         color: #d07206;
                     }
@@ -102,8 +108,11 @@ main{
             .titulo{
                 color: whitesmoke ;
                 display:flex;
-               justify-content: center;
-               align-items: center;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px 20px;
+                
 
             }
             article{
@@ -114,6 +123,8 @@ main{
                     align-items: center;
                     background-color: #0520f0;
                     text-align: center;
+                    border-radius: 10px;
+                    
                     &:hover{
                         color: #f19c00;
                     }
@@ -144,9 +155,60 @@ main{
             }
 }
 footer{
+    padding: 10px 20px;
     a{
         &:hover{
             color: black;
         }
      }
 }
+
+@media screen and (max-width: 768px) {
+ 
+	
+	.contenedor { 
+		background-color: #2a7bcb;
+		width: 90%;
+	    margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-areas: 
+		"alpes alpes"
+		"img1  img1"
+		"cordi cordi"
+		"img2  img2"
+		"footer footer";
+
+        .alpes {
+            grid-area: alpes;
+            
+        }
+        
+        .img1 {
+            grid-area: img1;
+            width: 100%;
+        }
+        .img2 {
+            grid-area: img2;
+            width: 100%;
+            margin-bottom: 5px;
+
+        }
+        
+        .cordi {
+            grid-area: cordi;
+        }
+        
+        .footer {
+            grid-area: footer;
+            text-align: center;
+            padding: 10px 20px;
+            }
+	    
+		
+		
+		}
+	
+	}
